@@ -1,1 +1,8 @@
-body {margin: 0; font-family: sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* RESETS */
+* { margin: 0; padding: 0; font: inherit; box-sizing: border-box; }
+ul, ol {list-style: none;}
+html, body { height: 100%; line-height: 1; }
+img, picture, svg { max-width: 100%; display: block; }
+body { font-family: 'Montserrat', sans-serif; }
