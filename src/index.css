@@ -46,3 +46,11 @@ body { font-family: 'Montserrat', sans-serif; background: var(--clr-secondary-20
     font-size: 2rem;
     color: var(--clr-primary-800)
 }
+
+/* UTILITY */
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
