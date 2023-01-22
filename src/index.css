@@ -6,3 +6,27 @@ ul, ol {list-style: none;}
 html, body { height: 100%; line-height: 1; }
 img, picture, svg { max-width: 100%; display: block; }
 body { font-family: 'Montserrat', sans-serif; }
+
+/* BEM */
+.product {
+    margin: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+.product__text {
+    padding: 1em;
+    display: grid;
+    gap: 1rem;
+}
+
+.product__title {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+}
+
+.product__price {
+    font-family: 'Fraunces';
+    font-size: 2rem;
+}
