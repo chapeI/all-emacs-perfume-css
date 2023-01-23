@@ -64,3 +64,9 @@ body { font-family: 'Montserrat', sans-serif; background: var(--clr-secondary-20
     cursor: pointer;
 }
 .btn:hover {background: var(--clr-primary-800);}
+
+.center-in-middle-of-page {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
