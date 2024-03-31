@@ -1,72 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import "./styling/variables.css";
+@import "./styling/resets.css";
+@import "./styling/utility.css";
 
-/* RESETS */
-* { margin: 0; padding: 0; font: inherit; box-sizing: border-box; }
-ul, ol {list-style: none;}
-html, body { height: 100%; line-height: 1; }
-img, picture, svg { max-width: 100%; display: block; }
-body { font-family: 'Montserrat', sans-serif; background: var(--clr-secondary-200); }
-
-/* COLORS */
-:root {
-  --clr-primary-800: hsl(158, 36%, 37%);
-  --clr-primary-900: hsl(158, 36%, 17%);
-
-  --clr-secondary-200: hsl(30, 38%, 92%);
-
-  --clr-neutral-800: hsl(212, 21%, 14%);
-  --clr-neutral-400: hsl(228, 12%, 48%);
-  --clr-neutral-100: hsl(0, 0%, 100%);
-}
-
-/* BEM */
 .product {
     margin: 1em;
     border-radius: 1em;
     overflow: hidden;
     max-width: 600px;
     display: grid;
+		border: 1px solid red;
 } @media (min-width: 600px) { .product { grid-template-columns: 1fr 1fr; } }
 
-.product__text {
+.product__description {
+		border: 3px solid blue;
     background: var(--clr-neutral-100);
     padding: 1em;
     display: grid;
     gap: 1rem;
 }
 
-.product__title {
+.product__description_title {
     font-size: 2rem;
     font-family: 'Fraunces';
     color: var(--clr-primary-800)
 }
 
-.product__price {
+.product__description_price {
     font-family: 'Fraunces';
     font-size: 2rem;
     color: var(--clr-primary-800)
-}
-
-/* UTILITY */
-.flex {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.btn {
-    border: none;
-    background: var(--clr-primary-800);
-    padding: 1em 3em;
-    border-radius: 0.5em;
-    color: var(--clr-neutral-100);
-    font-weight: 600;
-    cursor: pointer;
-}
-.btn:hover {background: var(--clr-primary-800);}
-
-.center-in-middle-of-page {
-    display: grid;
-    place-content: center;
-    height: 100vh;
 }
