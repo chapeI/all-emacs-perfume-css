@@ -1,0 +1,22 @@
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    background: var(--clr-primary-800);
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    color: var(--clr-neutral-100);
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {background: var(--clr-primary-800);}
+
+.center-of-webpage {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
